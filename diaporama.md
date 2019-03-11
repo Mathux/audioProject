@@ -39,7 +39,7 @@ CR_lounge_200110_1601.s1200_chunk42.16kHz
 
 ## Unsupervised feature learning ?
 - Extract features from unlabeled data
-- Learned them with a network
+- Learn them with a network
 
 
 
@@ -223,7 +223,7 @@ Missing files
 
 ### Recreate experiment with MFBs
 - Train the DAE model to output "good" features
-- Train the DNN model with MFBs (problems with the DAE features)
+- Train the DNN model with them
 
 
 ## Graph of DAE autoencoder
@@ -242,17 +242,23 @@ Missing files
 |-------|-------|-------|-------|-------|-------|-------|-------|
 | 0.700 | 0.667 | 0.310 | 1.000 | 0.757 | 1.000 | 0.645 | 0.780 |
 
+$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}$
+
 
 ## Recall results
 | c     | m     | f     | v    | p     | b     | o     | avg   |
 |-------|-------|-------|------|-------|-------|-------|-------|
 | 0.928 | 0.176 | 0.391 | 0.98 | 0.750 | 0.250 | 0.278 | 0.744 |
 
+$\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}$
 
-## Fvalue results
+
+## F-measure results
 | c     | m     | f     | v     | p     | b     | o     | avg   |
 |-------|-------|-------|-------|-------|-------|-------|-------|
 | 0.797 | 0.279 | 0.346 | 0.993 | 0.753 | 0.400 | 0.388 | 0.762 |
+
+$\text{F} = 2 \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$
 
 
 
