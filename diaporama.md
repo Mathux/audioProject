@@ -16,7 +16,7 @@ Mathis Petrovich
 - Based on the CHiME-home dataset $[20]$
 
 
-### Dataset used for this problemls
+### Dataset used for this problems
 - $4$ seconds chunks (at $16$ kHz)
 - $4378$ chunks in total
   - $1946$ available for training
@@ -73,7 +73,7 @@ Learn a representation of the data $[13]$-$[17]$
 Better performance but:
 - input features?
 - objective functions?
-- not rebust yet
+- not robust yet
 
 
 
@@ -138,7 +138,7 @@ Apply a Discrete Cosine Transform (DCT) on MFBs.
 
 
 
-## Auto encoder stucture (DAE)
+### Auto encoder stucture (DAE)
 <image src="images/vae.png" controls style="width:100%"></image> 
 
 
@@ -156,7 +156,7 @@ Apply a Discrete Cosine Transform (DCT) on MFBs.
 
 
 
-## Preproces the input features
+### Preproces the input features
 - Compute 40-dimension logarithmic MFBs 
 - Extend with the background noise vector
 - Normalize (zero mean, unit variance)
@@ -182,12 +182,6 @@ Value of $x$ when $x + y = 1$
 | MFB-DNN    | $0.157$ |
 | syDAE-DNN  | $0.153$ |
 | asyDAE-DNN | $0.148$ |
-
-
-### Conlusion of this article
-Major contributions in audio tagging
-- Better acoustic modeling
-- Better feature learning
 
 
 
@@ -263,8 +257,9 @@ $\text{F} = 2 \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \t
 
 
 ## Conclusion
-- New ideas in the domain
-- Inspire other article
+Major contributions in audio tagging
+- Better acoustic modeling
+- Better feature learning
 - Implementation/reproducibily of results 
   - not easy
 
